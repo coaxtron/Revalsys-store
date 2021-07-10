@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
         }
 
       default: {
-        this.products = this.products.sort((low, high) => low.Price - high.Price);
+        this.products = this.products.sort((low, high) => high.Price - low.Price);
         break;
       }
 

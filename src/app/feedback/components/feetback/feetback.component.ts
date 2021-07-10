@@ -19,10 +19,10 @@ export class FeetbackComponent implements OnInit {
 
   ngOnInit(): void {
     this.feedBackFrom = this.fb.group({
-      name: ['',Validators.required, Validators.pattern('[a-zA-Z ]*')],
-      mobile: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10), Validators.pattern(/^\d+$/)]],
-      email: ['',Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")],
-      feedback: ['',Validators.required]
+      name: ['',Validators.required],
+      mobile: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
+      email: ['',Validators.required],
+      feedback: ['']
     })
   }
 
