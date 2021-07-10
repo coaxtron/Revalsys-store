@@ -20,7 +20,7 @@
         <mat-icon matSuffix>vpn_key</mat-icon>
       </mat-form-field>
       <div fxLayoutAlign="center center">
-        <button  type="submit" mat-raised-button color="accent">LOGIN</button>
+        <button  type="submit" mat-raised-button [disabled]="!loginForm.valid" color="accent">LOGIN</button>
       </div>
     </div>
   </form>

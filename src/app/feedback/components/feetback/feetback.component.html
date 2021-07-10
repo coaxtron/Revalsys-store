@@ -28,7 +28,7 @@
         </mat-form-field>
       </div>
       <div fxLayoutAlign="center center" class="mt-4 mb-2">
-        <button  type="submit"  mat-raised-button color="accent">SEND</button>
+        <button  type="submit" [disabled]="!feedBackFrom.valid"  mat-raised-button color="accent">SEND</button>
       </div>
     </form>
     <!-- Feedback Form -->

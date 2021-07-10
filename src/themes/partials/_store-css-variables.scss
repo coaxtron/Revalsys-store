@@ -10,7 +10,7 @@
   --st-primary-100: #fcdbde;
   --st-primary-50: #fdedee;
   --st-primary-25: #ffffff;
-  // Kalgudi accent color
+  // st accent color
   --st-accent-900: #543770; // accent color
   --st-accent-800: #654b7e;
   --st-accent-700: #765f8d;
@@ -22,7 +22,7 @@
   --st-accent-100: #ddd7e2;
   --st-accent-50: #eeebf1;
   --st-accent-25: #ffffff;
-  // Kalgudi warn color
+  // st warn color
   --st-warn-50: #f6d9d5;
   --st-warn-100: #f2c5bf;
   --st-warn-200: #edb2aa;
@@ -32,7 +32,7 @@
   --st-warn-600: #dc6555;
   --st-warn-700: #d75240;
   --st-warn-800: #d33f2b; // Warn color
-  // Kalgudi contrast colors
+  // st contrast colors
   --st-white: #fff;
   --st-black: #000000;
   --st-dark: #3c3c3c;
@@ -45,7 +45,7 @@
   --st-side-nav-bg: #f3f3f3;
   --st-gray: #495464;
   --st-gray-dark: #495057;
-  // Kalgudi core variables
+  // st core variables
   --icon-color-primary: #212121 !important;
   //text colors
   --st-text-primary: var(--st-white);
@@ -85,76 +85,6 @@
   --whatsapp-color: #0ee00e;
   --tumblr-color: #34526f;
 
-  --st-header-height: 58px; // <- Height of the header in the app
-  --st-brand-color: var(--st-primary-900);
-
-  // Review star color on review product
-  --st-review-star: goldenrod;
-
-  // Rating colors
-  --excellent-color: #33da58;
-  --average-color: #ff741a;
-  --poor-color: #d75240;
-
-  --slider-btn-color: #ffffff2b;
-
-  // Footer colors
-  --st-additional-footer-color: #ffffff;
-  --st-footer-color: #362d46;
-
-
-
-  //All apps color
-  --st-input-store-color: #60be74;
-  --st-andhragreen-color: #fd5e40;
-  --st-outputstore-color: #0277bd;
-  --st-ebharati-store-color: #c36768;
-
-  --app-font-family: 'Poppins', sans-serif;
-  --app-title-font-family: 'Open Sans', sans-serif;
-
-  // Boarder radius of buttons
-  --st-boarder-radius: 6px;
-  --st-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-
-  //mat-badge-content
-  --st-mat-badge-content-bg-color: #f9ec0a;
-  --st-mat-badge-content-color: #ee4a59;
-  --st-mat-badge-content-border: #f9ec0a;
-
-    //login & signup link color
-    --st-login-color:var(--st-black);
-
-    // footer theme colors
-    --st-footer-bg-left: #ff535129;
-    --st-footer-bg-right: #F8F8FA;
-
-    --st-follow-us: #867F7F;
-
-    --st-tag-line: #FF5351;
-    --st-end-footer-bg: #E6E6FF;
-    --st-end-footer-color: #5B6C8F;
-
-    --st-tag-line-color: #103178;
-
-    --st-store-color: #1D1D3C;
-
-    // bulk enquiry
-    --st-bulk-page-border: #80808036;
-    --st-bulk-enquiry-heading: #394b69;
-
-    // assisted ordering
-    --st-border-light: #ccc;
-    --st-primary-bg: #cce5ff;
-    --st-primary-col: #004085;
-    --st-primary-border-col: #b8daff;
-    --st-warn-bg: #fff3cd;
-    --st-warn-col: #856404;
-    --st-warn-border-col: #ffeeba;
-
-    // breadcrumb
-    --st-breadcrumb-bg: var(--st-accent-800);
-    --st-breadcrumb-text: var(--st-white);
 
 
 }
