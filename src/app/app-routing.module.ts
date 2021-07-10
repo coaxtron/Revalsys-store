@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '',   redirectTo: '/Login', pathMatch: 'full' },
   {
     path: '',
     loadChildren: () => import('./storefornt/storefornt.module').then(m => m.StoreforntModule)
@@ -13,7 +14,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./feedback/feedback.module').then(m => m.FeedbackModule)
-  }
+  },
 ];
 
 @NgModule({
