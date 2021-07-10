@@ -1,0 +1,30 @@
+<!-- Start Login Page -->
+<section  fxLayoutAlign="center center">
+<mat-card fxLayout="column"  fxFlex="400px" fxFlex.xs="100%">
+  <div class="profile-info" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+    <img width="200" class="profile-img" src="https://image.flaticon.com/icons/png/512/64/64572.png" />
+  </div>
+  <!-- Login Form -->
+  <form [formGroup]="loginForm" (ngSubmit)="save()">
+    <div class="example-container" fxLayout="column">
+      <h2 style="font-weight: 100; text-align: center;">Please sign in</h2>
+      <mat-form-field appearance="outline">
+        <mat-label>EMAIL ID</mat-label>
+        <input matInput placeholder="Email Id" formControlName="email">
+        <mat-icon matSuffix>email</mat-icon>
+        <mat-error *ngIf="loginForm?.get('email')?.invalid" translate>Please enter a valid email.</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>PASSWORD</mat-label>
+        <input matInput placeholder="Password" formControlName="password">
+        <mat-icon matSuffix>vpn_key</mat-icon>
+      </mat-form-field>
+      <div fxLayoutAlign="center center">
+        <button  type="submit" mat-raised-button color="accent">LOGIN</button>
+      </div>
+    </div>
+  </form>
+  <!-- Login Form -->
+</mat-card>
+</section>
+<!-- Emd Login Page -->

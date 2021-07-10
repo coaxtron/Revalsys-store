@@ -1,0 +1,160 @@
+:root {
+  --st-primary-900: #ee4a59; // primary color (If you change this color, you have to change it in variable.scss file also)
+  --st-primary-800: #f05c6a;
+  --st-primary-700: #f16e7a;
+  --st-primary-600: #f3808b;
+  --st-primary-500: #f5929b;
+  --st-primary-400: #f7a5ac;
+  --st-primary-300: #f8b7bd;
+  --st-primary-200: #fac9cd;
+  --st-primary-100: #fcdbde;
+  --st-primary-50: #fdedee;
+  --st-primary-25: #ffffff;
+  // Kalgudi accent color
+  --st-accent-900: #543770; // accent color
+  --st-accent-800: #654b7e;
+  --st-accent-700: #765f8d;
+  --st-accent-600: #87739b;
+  --st-accent-500: #9887a9;
+  --st-accent-400: #aa9bb8;
+  --st-accent-300: #bbafc6;
+  --st-accent-200: #ccc3d4;
+  --st-accent-100: #ddd7e2;
+  --st-accent-50: #eeebf1;
+  --st-accent-25: #ffffff;
+  // Kalgudi warn color
+  --st-warn-50: #f6d9d5;
+  --st-warn-100: #f2c5bf;
+  --st-warn-200: #edb2aa;
+  --st-warn-300: #e99f95;
+  --st-warn-400: #e58c80;
+  --st-warn-500: #e0796b;
+  --st-warn-600: #dc6555;
+  --st-warn-700: #d75240;
+  --st-warn-800: #d33f2b; // Warn color
+  // Kalgudi contrast colors
+  --st-white: #fff;
+  --st-black: #000000;
+  --st-dark: #3c3c3c;
+  --st-light: #676767;
+  --st-blue: #22608b;
+  --st-light-blue: #353353;
+  --st-dark-blue: #153c56;
+  --st-yellow: #f9ec0a;
+  --st-light-gray-bg: #eee;
+  --st-side-nav-bg: #f3f3f3;
+  --st-gray: #495464;
+  --st-gray-dark: #495057;
+  // Kalgudi core variables
+  --icon-color-primary: #212121 !important;
+  //text colors
+  --st-text-primary: var(--st-white);
+  --st-text-primary-light: rgb(241, 241, 241);
+  --st-text-secondary: #212121;
+  --st-text-muted: #BDBDBD;
+  --st-text-success: #257316; // #43a131;
+  --st-text-warn: var(--st-warn-800);
+  --st-text-accent: var(--st-accent-900);
+  --st-mat-tab-color: #0f5473;
+  --st-success-text-black: #000000;
+  //background colors
+  --st-bg-primary: #edf2f6;
+  --st-app-background-color: #f1edf6;
+  --st-bg-form-color: #f6f6f9;
+  --st-product-info-tabs-bg-color: #edfbff;
+  --st-order-success-bg-color: #fafafa;
+  //link-hover-colors
+  --st-link-color: #1258a4; // #428bca;
+  --st-link-hover-color: #2a6496;
+  --st-drop-down-menu-hover-bg: #f5f5f5;
+  --st-header-color:#6C757D;
+  //Border colors
+  --st-border-dim: #e0e0e0;
+  --st-footer-border: #dedede;
+  // Form colors
+  --form-icon-color: rgba(99, 97, 97, 0.85);
+  --form-outline-color: rgba(0, 0, 0, 0.2);
+  --form-bg-color: #bad9ed;
+  --form-br-primary: var(--st-primary-400);
+  --form-bg-primary: var(--st-primary-100);
+  // social links hover colors
+  --facebook-color: #385898;
+  --instagram-color: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  --linkedin-color: #0e76a8;
+  --twitter-color: #1da1f2;
+  --whatsapp-color: #0ee00e;
+  --tumblr-color: #34526f;
+
+  --st-header-height: 58px; // <- Height of the header in the app
+  --st-brand-color: var(--st-primary-900);
+
+  // Review star color on review product
+  --st-review-star: goldenrod;
+
+  // Rating colors
+  --excellent-color: #33da58;
+  --average-color: #ff741a;
+  --poor-color: #d75240;
+
+  --slider-btn-color: #ffffff2b;
+
+  // Footer colors
+  --st-additional-footer-color: #ffffff;
+  --st-footer-color: #362d46;
+
+
+
+  //All apps color
+  --st-input-store-color: #60be74;
+  --st-andhragreen-color: #fd5e40;
+  --st-outputstore-color: #0277bd;
+  --st-ebharati-store-color: #c36768;
+
+  --app-font-family: 'Poppins', sans-serif;
+  --app-title-font-family: 'Open Sans', sans-serif;
+
+  // Boarder radius of buttons
+  --st-boarder-radius: 6px;
+  --st-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  //mat-badge-content
+  --st-mat-badge-content-bg-color: #f9ec0a;
+  --st-mat-badge-content-color: #ee4a59;
+  --st-mat-badge-content-border: #f9ec0a;
+
+    //login & signup link color
+    --st-login-color:var(--st-black);
+
+    // footer theme colors
+    --st-footer-bg-left: #ff535129;
+    --st-footer-bg-right: #F8F8FA;
+
+    --st-follow-us: #867F7F;
+
+    --st-tag-line: #FF5351;
+    --st-end-footer-bg: #E6E6FF;
+    --st-end-footer-color: #5B6C8F;
+
+    --st-tag-line-color: #103178;
+
+    --st-store-color: #1D1D3C;
+
+    // bulk enquiry
+    --st-bulk-page-border: #80808036;
+    --st-bulk-enquiry-heading: #394b69;
+
+    // assisted ordering
+    --st-border-light: #ccc;
+    --st-primary-bg: #cce5ff;
+    --st-primary-col: #004085;
+    --st-primary-border-col: #b8daff;
+    --st-warn-bg: #fff3cd;
+    --st-warn-col: #856404;
+    --st-warn-border-col: #ffeeba;
+
+    // breadcrumb
+    --st-breadcrumb-bg: var(--st-accent-800);
+    --st-breadcrumb-text: var(--st-white);
+
+
+}

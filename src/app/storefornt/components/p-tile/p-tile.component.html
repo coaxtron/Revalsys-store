@@ -1,0 +1,34 @@
+
+<!-- Start p-tile -->
+<mat-card  fxLayout="column">
+  <div fxLayout="row"  fxLayoutAlign="space-between center">
+    <div class="order">
+      <div class="pre-order" fxLayout="row" fxLayoutAlign="center center">
+        <span fxLayoutAlign="center center">{{product?.Collection}}</span>
+      </div>
+    </div>
+    <span class="icon ">{{product?.ProductCode}}</span>
+  </div>
+  <div class="product-img mt-3" fxLayoutAlign="center center">
+    <img src="{{product?.ListImagePath + product?.Images}}" width="150">
+  </div>
+  <div class="product-title" fxLayout="column" fxLayoutAlign="start start">
+    <span class="title">{{product?.ProductTitle}}</span>
+
+  </div>
+  <div fxLayout="row"  fxLayoutAlign="space-between">
+    <p class="style">{{product?.StyleName}}</p>
+    <p class="size">{{product?.AvailableSizes}}</p>
+   </div>
+  <div class="buy" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="price-tag" fxLayout="row" fxLayoutAlign="center center">
+      <span class="mr-1 unit">Qt-{{product?.NetQuantity}}</span>/
+      <span class="ml-1 price">{{product?.Price | currency: "INR":"symbol":"1.0"}}</span>
+    </div>
+    <div class="buy-btn" fxLayout="row" (click)="onClick($event)"  fxLayoutAlign="center center" fxLayoutGap="10px">
+      <mat-icon>shopping_basket</mat-icon>
+      <span fxLayoutAlign="center center" class="mt-1">BUY</span>
+    </div>
+  </div>
+</mat-card>
+<!-- Ends p-tile -->

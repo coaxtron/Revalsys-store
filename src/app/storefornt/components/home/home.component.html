@@ -1,0 +1,18 @@
+<section fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign.xs="start start">
+<div fxLayout="row" fxLayoutAlign="start start">
+  <select id="sort-by" (change)="filter($event)">
+    <option value="" selected disabled hidden>Sort By</option>
+    <option value="Low">Show Low to High Price</option>
+    <option value="High">Show High to Low Price</option>
+</select>
+</div>
+
+
+  <div class="app-container d-flex flex-wrap">
+    <ng-container *ngFor="let product of products">
+      <app-p-tile [product]="product" (clicked)="buyNow()" fxFlex="20%" fxFlex.sm="25%" fxFlex.xs="50%"></app-p-tile>
+    </ng-container>
+  </div>
+
+</section>
+<!-- Ends Home -->

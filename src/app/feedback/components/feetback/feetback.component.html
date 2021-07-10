@@ -1,0 +1,37 @@
+<!-- Start Feedback Form -->
+<section fxLayoutAlign="center center">
+<mat-card fxLayout="column"  fxFlex="500px" fxFlex.xs="100%">
+    <!-- Feedback Form -->
+    <form [formGroup]="feedBackFrom" (ngSubmit)="save()">
+      <div class="example-container" fxLayout="column" fxLayoutAlign="center">
+        <h2>FEEDBACK</h2>
+        <mat-form-field appearance="outline">
+          <mat-label>NAME</mat-label>
+          <input matInput placeholder="Name" type="text" formControlName="name">
+          <mat-error *ngIf="feedBackFrom?.get('name')?.invalid" translate>Please enter your name.</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>EMAIL ID</mat-label>
+          <input matInput placeholder="Email Id" type="email" formControlName="email">
+          <mat-error *ngIf="feedBackFrom?.get('email')?.invalid" translate>Please enter a valid email.</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>MOBILE</mat-label>
+          <input matInput placeholder="Mobile" type="tel" formControlName="mobile">
+          <mat-error *ngIf="feedBackFrom?.get('mobile')?.invalid" translate>Please enter your mobile number.</mat-error>
+
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>FEEDBACK</mat-label>
+          <textarea matInput cdkTextareaAutosize placeholder="Feedback" formControlName="feedback" #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="3" cdkAutosizeMaxRows="5"></textarea>
+        </mat-form-field>
+      </div>
+      <div fxLayoutAlign="center center" class="mt-4 mb-2">
+        <button  type="submit"  mat-raised-button color="accent">SEND</button>
+      </div>
+    </form>
+    <!-- Feedback Form -->
+</mat-card>
+</section>
+<!-- Ends Feedbacks Form -->
