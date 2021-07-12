@@ -13,6 +13,9 @@ import { LocalStorageService } from 'src/app/feedback/service/local-storage.serv
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+  emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+
   loginForm = new FormGroup({
     email: new FormControl(''),
     password: new FormControl('')
@@ -22,8 +25,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      email: ['',Validators.required],
-      password: ['',Validators.required  ]
+      email: [null, Validators.compose([Validators.required, Validators.email])],
+      password: [null, Validators.compose([Validators.required,Validators.minLength(8)])],
     })
   }
   public save(){
@@ -33,3 +36,4 @@ export class LoginComponent implements OnInit {
 
   }
 }
+// 'email':

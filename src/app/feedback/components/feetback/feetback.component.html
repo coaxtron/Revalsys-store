@@ -8,23 +8,29 @@
         <mat-form-field appearance="outline">
           <mat-label>NAME</mat-label>
           <input matInput placeholder="Name" type="text" formControlName="name">
-          <mat-error *ngIf="feedBackFrom?.get('name')?.invalid" translate>Please enter your name.</mat-error>
+          <mat-error *ngIf="feedBackFrom?.get('name')?.hasError('maxlength')">Please enter your name maximum 15 character.</mat-error>
+          <mat-error *ngIf="feedBackFrom.get('name')?.hasError('minlength')">
+            Please enter your name minimum 3 character
+          </mat-error>
         </mat-form-field>
         <mat-form-field appearance="outline">
           <mat-label>EMAIL ID</mat-label>
           <input matInput placeholder="Email Id" type="email" formControlName="email">
-          <mat-error *ngIf="feedBackFrom?.get('email')?.invalid" translate>Please enter a valid email.</mat-error>
+          <mat-error *ngIf="feedBackFrom?.get('email')?.invalid">Please enter a valid email.</mat-error>
         </mat-form-field>
         <mat-form-field appearance="outline">
           <mat-label>MOBILE</mat-label>
-          <input matInput placeholder="Mobile" type="tel" formControlName="mobile">
-          <mat-error *ngIf="feedBackFrom?.get('mobile')?.invalid" translate>Please enter your mobile number.</mat-error>
+          <input matInput placeholder="Mobile" type="text" formControlName="mobile">
+          <!-- <mat-error *ngIf="feedBackFrom?.get('mobile')?.invalid">Please enter your 10 digit mobile number .</mat-error> -->
+          <mat-error *ngIf="feedBackFrom?.get('mobile')?.hasError('maxlength')">Please enter your 10 digit mobile number.</mat-error>
+          <mat-error *ngIf="feedBackFrom?.get('mobile')?.hasError('minlength')">Please enter your 10 digit mobile number.</mat-error>
 
         </mat-form-field>
         <mat-form-field appearance="outline">
           <mat-label>FEEDBACK</mat-label>
           <textarea matInput cdkTextareaAutosize placeholder="Feedback" formControlName="feedback" #autosize="cdkTextareaAutosize"
             cdkAutosizeMinRows="3" cdkAutosizeMaxRows="5"></textarea>
+            <mat-error *ngIf="feedBackFrom?.get('feedback')?.invalid">Please enter atleast 50 character .</mat-error>
         </mat-form-field>
       </div>
       <div fxLayoutAlign="center center" class="mt-4 mb-2">

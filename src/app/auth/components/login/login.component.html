@@ -10,13 +10,14 @@
       <h2 style="font-weight: 100; text-align: center;">Please Login In</h2>
       <mat-form-field appearance="outline">
         <mat-label>EMAIL ID</mat-label>
-        <input matInput placeholder="Email Id" formControlName="email">
+        <input matInput placeholder="Email Id"  type="email" formControlName="email">
         <mat-icon matSuffix>email</mat-icon>
         <mat-error *ngIf="loginForm?.get('email')?.invalid" translate>Please enter a valid email.</mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>PASSWORD</mat-label>
         <input matInput placeholder="Password" formControlName="password">
+        <mat-error *ngIf="loginForm?.get('password')?.invalid" translate>Please enter minimume 8 word.</mat-error>
         <mat-icon matSuffix>vpn_key</mat-icon>
       </mat-form-field>
       <div fxLayoutAlign="center center">
