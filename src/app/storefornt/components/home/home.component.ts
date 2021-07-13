@@ -11,6 +11,7 @@ import { ProductModel } from '../../model/product.model';
 export class HomeComponent implements OnInit {
 
   public products = products;
+  public loadAll = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -32,6 +33,7 @@ export class HomeComponent implements OnInit {
         {
           this.products = this.products.sort((low, high) => low.Price - high.Price);
           this.router.navigate(['.'], { relativeTo: this.route, queryParams: {sortType:'lowtohigh'}});
+          this.loadAll = false;
           break;
         }
 
@@ -39,12 +41,16 @@ export class HomeComponent implements OnInit {
         {
           this.products = this.products.sort((low, high) => high.Price - low.Price);
           this.router.navigate(['.'], { relativeTo: this.route, queryParams: {sortType:'hightolow'}});
+          this.loadAll = false;
+
 
           break;
         }
 
       default: {
         this.products = this.products.sort((low, high) => high.Price - low.Price);
+        this.loadAll = false;
+
         break;
       }
 

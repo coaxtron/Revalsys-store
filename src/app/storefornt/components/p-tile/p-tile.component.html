@@ -10,7 +10,7 @@
     <span class="icon ">{{product?.ProductCode}}</span>
   </div>
   <div class="product-img mt-3" fxLayoutAlign="center center">
-    <img src="{{product?.ListImagePath + product?.Images}}" width="150">
+    <img src="{{product?.ListImagePath + product?.Images}}" width="150" loading="lazy">
   </div>
   <div class="product-title" fxLayout="column" fxLayoutAlign="start start">
     <span class="title">{{product?.ProductTitle}}</span>

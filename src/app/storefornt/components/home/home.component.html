@@ -9,10 +9,15 @@
 
 
   <div class="app-container d-flex flex-wrap">
-    <ng-container *ngFor="let product of products">
-      <app-p-tile [product]="product" (clicked)="buyNow()" fxFlex="20%" fxFlex.sm="25%" fxFlex.xs="50%"></app-p-tile>
+    <ng-container *ngFor="let product of products; index as index">
+      <app-p-tile [product]="product" (clicked)="buyNow()" fxFlex="20%" fxFlex.sm="25%" fxFlex.xs="50%"  [fxHide]="index >= 10 && !loadAll"></app-p-tile>
     </ng-container>
+
+
   </div>
+
+  <button class="load-all text-center" mat-raised-button color="primary" *ngIf="!loadAll" (click)="loadAll = true" translate>Load
+    more</button>
 
 </section>
 <!-- Ends Home -->
